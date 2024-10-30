@@ -68,7 +68,7 @@ function AdicionarFuncionario() {
     }
 
     const patronall = () => {
-        const patronalNum = parseFloat(inssPatronal);
+        const patronalNum = parseFloat(inssPatronal) / 100 ;
         const salarioVal = parseFloat(salario);
         if (!isNaN(patronalNum) && !isNaN(salarioVal)) {
             setPatronalVal(patronalNum * salarioVal);
@@ -78,7 +78,7 @@ function AdicionarFuncionario() {
     }
 
     const encargos = () => {
-        const encargosNum = parseFloat(outrosEncargos);
+        const encargosNum = parseFloat(outrosEncargos) / 100 ;
         const outrosNum = parseFloat(salario);
         if (!isNaN(encargosNum) && !isNaN(outrosNum)) {
             setEncargosVal(encargosNum * outrosNum);
